@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCodigoBarrras"
+        android:layout_marginTop="3dp"
+        android:hint="CÓDIGO DE BARRAS:"
+        android:textAlignment="center"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDescripcion"
+        android:layout_below="@id/etCodigoBarrras"
+        android:hint="DESCRIPCION:"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMarca"
+        android:layout_below="@id/etDescripcion"
+        android:hint="MARCA:"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPrecioCompra"
+        android:layout_below="@id/etMarca"
+        android:hint="PRECIO COMPRA:"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPrecioVenta"
+        android:layout_below="@id/etPrecioCompra"
+        android:hint="PRECIO VENTA:"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etExistencia"
+        android:layout_below="@id/etPrecioVenta"
+        android:hint="EXISTENCIA:"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBuscar"
+        android:text="BUSCAR"
+        android:layout_below="@id/etExistencia"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGuardar"
+        android:text="GUARDAR"
+        android:layout_toLeftOf="@+id/btnBuscar"
+        android:layout_below="@id/etExistencia"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnActualizar"
+        android:text="ACTUALIZAR"
+        android:layout_toRightOf="@+id/btnBuscar"
+        android:layout_below="@id/etExistencia"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEliminar"
+        android:text="ELIMINAR"
+        android:layout_below="@id/btnBuscar"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvProductos"
+        android:layout_below="@id/btnEliminar"/>
+
+
+</RelativeLayout>
